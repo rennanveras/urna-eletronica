@@ -1,0 +1,256 @@
+@keyframes blink{
+    0%{ opacity: 0.2;}
+    50% { opacity: 1;}
+    100% { opacity: 0.2;}
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    font-size:62.5%;
+    font-family:"Montserrat",Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+main{
+    height: auto;
+    width: 100vw;
+    background-color: rgb(75, 117, 121);
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.area-urn{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.urn{
+    display: flex;
+    background-color: #dbd5c9;
+    padding:4rem;
+}
+
+.screen{
+    width: 50rem;
+    height: 32rem;
+    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border:0.2rem solid #555;
+    display: flex;
+    flex-direction: column;
+}
+
+.keyboard{
+    background-color: #403A3A;
+    margin-left:3rem;
+    padding: 1rem;
+}
+.keyboard--line{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.keyboard--line2{
+    display: flex;
+}
+
+.keyboard--button{
+    color: #FFF ;
+    text-align: center;
+    background-color: #111;
+    padding: 1.6rem;
+    font-size: 2rem;
+    text-transform:uppercase;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.2rem 0.1rem #666666;
+}
+
+.button0{
+    grid-row: 4/5;
+    grid-column:2/3;
+}
+
+.button-withe{
+    grid-row: 5/6;
+    grid-column:1/2;
+    background-color: #F1F1F1;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+.button-correct{
+    grid-row: 5/6;
+    grid-column:2/3;
+    background-color: #ba3c3c;
+    color: #000000;
+    font-weight: 400;
+}
+
+.button-confirm{
+    grid-row: 5/6;
+    grid-column:3/4;
+    background-color: #067e06;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+.d-1{
+    display: flex;
+    flex:1;
+}
+
+.d-1--left{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.d-1-1{
+    height:5rem;
+    display: flex;
+    align-items:center;
+    font-size: 2rem;
+}
+
+.d-1-2{
+    height: 5rem;
+    display: flex;
+    align-items:center;
+    font-size:1.8rem;
+    justify-content: center;
+}
+.d-1-3{
+    display: flex;
+    align-items:center;
+    height: 5rem;
+    font-size: 1.4rem;
+}
+
+.d-1-3 p{
+    margin-right: 0.5rem;
+}
+
+.square-numbers{
+    display: inline-block;
+    width: 3rem;
+    height: 4rem;
+    border: 0.1rem solid #000;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2.5rem;
+    margin-right: 0.3rem;
+}
+
+.blink{
+    animation-name: blink;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+}
+
+.d-1-4{
+    display: flex;
+    flex:1;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    flex-direction: column;
+}
+
+.d-1--right{
+    width: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.d-1-img{
+    border: 0.1rem solid #000;
+    background-color: #FFF;
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+
+.d-1-img img{
+    width: 100%;
+}
+
+.d-1-img.small{
+    width: 68%;
+    font-size:1rem;
+}
+
+.d-2{
+    height: 5rem;
+    font-size: 1.4rem;
+    border-top: 0.2rem solid #000000;
+    padding-left: 1rem;
+    font-weight: 400;
+}
+
+.aviso--grande{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.aviso--final{
+    font-size: 7rem;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-candidate{
+    margin-top: 100px;
+}
+.area-candidatos{
+    text-align: center;
+    width: 50%;
+}
+
+.area-candidatos h1{
+    font-size: 22px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.lista-candidatos{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.lista-candidatos li h2{
+    color: #C1C1C1;
+    font-size: 19px;
+}
+
+.lista-candidatos li p{
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-top:5px;
+}
+
+
+.lista-candidatos li{
+    margin: 10px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/urna.css">
+    <link rel="stylesheet" href="./src/css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Urna Eletrônica</title>
+</head>
+<body>
+    <main>
+        <div class="area-urn">
+            <div class="urn">
+                <div class="screen">
+                    <div class="d-1">
+                        <div class="d-1--left">
+                            <div class="d-1-1">
+                                <span>SEU VOTO PARA</span>
+                            </div>
+                            <div class="d-1-2">
+                                <span>VEREADOR</span>
+                            </div>
+                            <div class="d-1-3">
+                                <p>Número: </p>
+                                <div class="square-numbers blink"></div>
+                                <div class="square-numbers"></div>
+                            </div>
+                            <div class="d-1-4">
+                                Nome: José Aldo<br/>
+                                Partido: UFC<br/>
+                                Vice-Prefeito: Ana Aldo
+                            </div>
+                        </div>
+                        <div class="d-1--right">
+                            <div class="d-1-img">
+                                <img src="src/img/aldo.jpg" alt="">
+                                <h2>Prefeito</h2>
+                            </div>
+                            <div class="d-1-img small">
+                                <img src="src/img/anderson.jpg" alt="">
+                                <h3>Vice-Prefeito</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-2">
+                        <p>Aperta a tecla</p>
+                        <p>CONFIRMA para CONFIRMAR este voto</p>
+                        <p>CORRIGE para REINICIAR este voto</p>
+                    </div>
+                </div>
+                <div class="keyboard">
+                    <div class="keyboard--line">
+                        <div class="keyboard--button button1" onclick="clickMe('1')">1</div>
+                        <div class="keyboard--button button2" onclick="clickMe('2')">2</div>
+                        <div class="keyboard--button button3" onclick="clickMe('3')">3</div>
+                        <div class="keyboard--button button4" onclick="clickMe('4')">4</div>
+                        <div class="keyboard--button button5" onclick="clickMe('5')">5</div>
+                        <div class="keyboard--button button6" onclick="clickMe('6')">6</div>
+                        <div class="keyboard--button button7" onclick="clickMe('7')">7</div>
+                        <div class="keyboard--button button8" onclick="clickMe('8')">8</div>
+                        <div class="keyboard--button button8" onclick="clickMe('9')">9</div>
+                        <div class="keyboard--button button0" onclick="clickMe('0')">0</div>
+                        <div class="keyboard--button button-withe" onclick="white()">Branco</div>
+                        <div class="keyboard--button button-correct" onclick="correct()">Corrigir</div>
+                        <div class="keyboard--button button-confirm" onclick="confirm()">Confirma</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="info-candidate">
+            <div class="container">
+                
+                <div class="area-candidatos"> 
+                    <h1>Vereadores</h1>
+                    <ul class="lista-candidatos">
+                        <li>
+                            <img src="src/img/aldo.jpg" alt="">
+                            <h2>José Aldo</h2>
+                            <p>11133</p>
+                        </li>
+                        <li>
+                            <img src="src/img/charles.jpg" alt="">
+                            <h2>Charles</h2>
+                            <p>04303</p>
+                        </li>
+                        <li>
+                            <img src="src/img/anderson.jpg" alt="">
+                            <h2>Anderson</h2>
+                            <p>71232</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="area-candidatos"> 
+                    <h1>Prefeito</h1>
+                    <ul class="lista-candidatos">
+                        <li>
+                            <img src="src/img/adonis.jpg" alt="">
+                            <h2>Adonis</h2>
+                            <p>91</p>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="src/img/gregor.jpg" alt="">
+                            <h2>McGregor</h2>
+                            <p>80</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/etapas.js"></script>
+    <script src="./src/js/urna.js"></script>
+</body>
+</html>
